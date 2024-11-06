@@ -297,6 +297,7 @@
 /* qquality-cart */
 .quality-section {
   padding: 20px;
+  background: #f4f5f7;
 }
 .quality-cart-container {
   display: grid;
