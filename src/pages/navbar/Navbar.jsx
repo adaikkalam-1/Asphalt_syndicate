@@ -1,29 +1,3 @@
-// import imgs from "../../assets/asphalt-main-logo.png";
-// import { IoLogoFacebook } from "react-icons/io";
-// import { CiInstagram, CiLinkedin } from "react-icons/ci";
-// const Navbar = () => {
-//   return (
-//     <div className="navbar-container">
-//       <div className="navbar-logo">
-//         <img src={imgs} alt="logo" className="navbar-logo-img" />
-//       </div>
-//       <ul className="nav-link">
-//         <li>Home</li>
-//         <li>About us</li>
-//         <li>Our Products</li>
-//         <li>Gallery</li>
-//         <li>Contact Us</li>
-//       </ul>
-//       <div className="nav-social-container">
-//         <IoLogoFacebook className="nav-icon" />
-//         <CiInstagram className="nav-icon" />
-//         <CiLinkedin className="nav-icon" />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
 
 import imgs from "../../assets/asphalt-main-logo.png";
 import { IoLogoFacebook } from "react-icons/io";
@@ -67,14 +41,23 @@ const Navbar = () => {
         </li>
         <li>
           <Link
-            to="/"
+            to="/about"
             onClick={() => handleNavClick("about")}
             className={active === "about" ? "active-link" : ""}
           >
             About us
           </Link>
         </li>
-        <li>Our Products</li>
+        <li>
+      
+          <Link
+            to="/products"
+            onClick={() => handleNavClick("products")}
+            className={active === "about" ? "active-link" : ""}
+          >
+            Our Products
+          </Link>
+        </li>
         <li>Gallery</li>
         <li>Contact Us</li>
       </ul>
