@@ -53,7 +53,7 @@ const Navbar = () => {
           <Link
             to="/products"
             onClick={() => handleNavClick("products")}
-            className={active === "about" ? "active-link" : ""}
+            className={active === "products" ? "active-link" : ""}
           >
             Our Products
           </Link>
