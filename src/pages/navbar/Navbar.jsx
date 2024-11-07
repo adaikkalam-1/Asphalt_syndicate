@@ -1,4 +1,3 @@
-
 import imgs from "../../assets/asphalt-main-logo.png";
 import { IoLogoFacebook } from "react-icons/io";
 import { CiInstagram, CiLinkedin } from "react-icons/ci";
@@ -49,7 +48,6 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-      
           <Link
             to="/products"
             onClick={() => handleNavClick("products")}
@@ -58,8 +56,24 @@ const Navbar = () => {
             Our Products
           </Link>
         </li>
-        <li>Gallery</li>
-        <li>Contact Us</li>
+        <li>
+          <Link
+            to="/gallery"
+            onClick={() => handleNavClick("gallery")}
+            className={active === "gallery" ? "active-link" : ""}
+          >
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/contact"
+            onClick={() => handleNavClick("contact")}
+            className={active === "contact" ? "active-link" : ""}
+          >
+            Contact Us
+          </Link>
+        </li>
       </ul>
 
       {/* Social icons, hidden on mobile */}

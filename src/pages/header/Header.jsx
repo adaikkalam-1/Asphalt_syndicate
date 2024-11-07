@@ -1,8 +1,11 @@
 import edit_remove from "../../assets/Edit-removebg-preview.png";
 import About from "../about/About";
 import Client from "../clients/Client";
+import Contact from "../contact/Contact";
+import Gallery from "../gallery/Gallery";
 import Product from "../product/Product";
 import Quality from "../quality/Quality";
+import Serve from "../serve/Serve";
 
 const Header = () => {
   return (
@@ -34,6 +37,15 @@ const Header = () => {
       </section>
       <section className="quality-section">
         <Quality />
+      </section>
+      <section className="contact-section">
+        <Contact />
+      </section>
+      <section className="serve-section">
+        <Serve />
+      </section>
+      <section className="gallery-section">
+        <Gallery />
       </section>
     </>
   );
