@@ -1,4 +1,3 @@
-import React from "react";
 import contact_img from "../../assets/contact-image.png";
 
 const Contact = () => {

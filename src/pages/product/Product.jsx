@@ -67,7 +67,7 @@ const Product = () => {
         </div>
       </div>
       <div className="products-card-container">
-        {data.map((item, i) => (
+        {data.map((item) => (
           <div className="product-card" key={item.id} >
             <div className="product-img-container">
               <img src={item.images} alt="" />
